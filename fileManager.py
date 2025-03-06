@@ -8,7 +8,6 @@ class FileManager:
         self.current_directory = WORKING_DIRECTORY
 
     def _validate_path(self, path):
-        """Проверяет, что путь находится внутри рабочей папки."""
         return os.path.abspath(path).startswith(WORKING_DIRECTORY)
 
     def create_folder(self, folder_name):
